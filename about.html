@@ -9,21 +9,29 @@ image: assets/img/about/about.png
 <img itemprop="image" class="img-rounded about_perfil" src="{{site.profile_picture | prepend: site.baseurl}}" alt="My profile">
 <h1>William Tumeo</h1>
 <p>
-	Hi, I'm <b><i>William Tumeo</i></b>!
+	Hi, I'm <b {% include tooltip info="aka Tume（爪）" %}><i>William Tumeo</i></b>!
 </p>
 <p>
-	I make <span {% include tooltip info="Free/Libre Open-Source Software" %}>FLOSS</span> games and other kinds of tools. <br>
-	I also try to make some art.
+	I make <span {% include tooltip info="Free/Libre Open-Source Software" %}>FLOSS</span> games and various kinds of tools 🛠<br />
+	I also try to make some art 🎨
 </p>
 <p>
-	<img src="{{"/assets/img/site/blog-image.png" | prepend: site.baseurl}}" alt="">
+	<img src="{{ "/assets/img/site/blog-image.png" | prepend: site.baseurl }}" alt="Profile Card">
 </p>
 
 <h2>About me</h2>
 
-<p>I'm a Systems Analyst and Game Developer at <a href="https://twitter.com/NovastrikeMEDIA" target="_blank">@NovastrikeMEDIA</a> and a Supporter of Free-Software Initiative.</p>
-<p>I 💜 Python and <a href="#" target="_blank" {% include tooltip info="An awesome open-source game engine" %}>Godot Engine.</a></p>
-<p>I'm dyslexic but trying to learn English and <span {% include tooltip info="Japanese" size="small" pos="right" %}>日本語</span>.</p>
+<p>
+	I'm a Systems Analyst and Game Developer at <a href="https://twitter.com/NovastrikeMEDIA" target="_blank">@NovastrikeMEDIA</a>. <br />
+	I'm a supporter of <span {% include tooltip info="I endorse only permissive licenses" %}>Free-Software Initiative.</span> <br />
+
+	I 💜 Python and <a href="https://godotengine.org/" target="_blank" {% include tooltip info="An awesome open-source game engine" %}>Godot Engine</a>. <br />
+
+	I try to do some art/pixelart using <a href="https://krita.org/en/" target="_blank" {% include tooltip info="An awesome open-source painting program" %}>Krita</a>. <br />
+
+	I'm dyslexic but trying to learn English and <span {% include tooltip info="Japanese" pos="right" %}>日本語</span>. <br />
+	<small>By the way I use Arch Linux :P</small>
+</p>
 
 <h2>My keys</h2>
 
@@ -39,21 +47,25 @@ image: assets/img/about/about.png
 	</p>
 </p>
 
-<h2>Social</h2>
+<h2>Contact and SNS</h2>
+
 <p>
-	You can find my games at <a href="https://tumeo.itch.io/" target="_blank">itch.io</a>, a great platform for indie games.
-</p>
-<p>
-	<ul>
-		Other links: <a href="https://twitter.com/tumeo_" target="_blank">Twitter</a> | <a href="https://github.com/williamd1k0" target="_blank">GitHub</a> |  <a href="https://medium.com/@tumeowilliam" target="_blank">Medium</a>
-	</ul>
-	<ul>
-		E-mail: <a href="mailto:contact@tumeo.space">contact@tumeo.space</a>
-	</ul>
+	E-mail: <a href="mailto:contact@tumeo.space">contact@tumeo.space</a>
+	<br />
+	SNS: <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a> | <a href="https://{{ site.mastodon_instance_username }}" target="_blank">Mastodon</a> | <a href="https://bittube.video/accounts/tumeo/" target="_blank">PeerTube</a> | <a href="https://creary.net/@{{ site.creary_username }}" target="_blank">Creary</a> | <a href="https://medium.com/@tumeowilliam" target="_blank">Medium</a>
+
 </p>
 
 
-<h2>Some projects</h2>
+<h2>Projects</h2>
+
+<p>
+	You can find my games on <a href="https://{{ site.itch_username }}.itch.io/" target="_blank">itch.io</a>, a great platform for indie games.
+	<br />
+	You can also check out my repositories on <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a> and <a href="https://gitlab.com/{{ site.gitlab_username }}" target="_blank">GitLab</a>.
+</p>
+
+<h3>Some projects</h3>
 <div class="aboutme">
 	<ul class="recent">
 		{% for project in site.projects %}
