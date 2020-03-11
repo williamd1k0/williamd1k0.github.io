@@ -7,7 +7,7 @@
 <script>
 	$(document).ready(function () {
 		var v = ImageViewer();
-		$('.post-content p img, .post-content figure img').click(function () {
+		$('.post-content p img:not(.no-zoom), .post-content figure img:not(.no-zoom)').click(function () {
 			v.show(this.src);
 		});
 
