@@ -1,0 +1,112 @@
+.tags
+    margin-top rem(30px)
+    a
+        font-size rem(14px)
+        color main
+        display inline-block
+        border 1px solid main
+        border-radius rem(5px)
+        padding rem(4px) rem(10px)
+        margin-right rem(2px)
+        margin-bottom rem(8px)
+        text-decoration none
+        &:hover
+            color hover
+            border 1px solid hover
+
+.img-rounded
+    border-radius 50%
+
+.aboutme
+    .recent
+        list-style none
+    .post-title
+        &:before
+            content ""
+    h2
+        &:hover
+            background-color mainHover
+    li
+      h3
+        font-size rem(20px)
+        margin-bottom 7px
+        position relative
+        &:before
+          content "|>"
+          font-size rem(20px)
+          color texts
+          position absolute
+          left -10px
+          transition all .2s
+        &:hover
+          &:before
+            transform translateX(-10px)
+
+
+// pseudo syntax-highlighting
+
+syntaxpal = 'godot'
+if syntaxpal == 'monokai'
+    // monokai
+    cdefault = white
+    cbg = #272822
+    ckeyword = #F92672
+    cbuiltin = #66D9EF
+    cname = #A6E22E
+    cparam = #FD971F
+    cconstant = #ae81ff
+    cstring = #e6db74
+    ccomment = #75715e
+    csymbol = white
+    cselection = grey
+
+if syntaxpal == 'godot'
+    // godot
+    cdefault = #aaaaaa
+    cbg = rgba(0, 0, 0, 0.23)
+    ckeyword = #ffffb3
+    cbuiltin = #a3ffd4
+    cname = #66a1cd
+    cparam = #e64d59
+    cconstant = #ae81ff
+    cstring = #ef6ebd
+    ccomment = #676767
+    csymbol = #badfff
+    cselection = #b599f1
+
+::selection
+    background-color cselection;
+    color black
+::moz-selection
+    background-color cselection;
+    color black
+
+.s-default
+    color cdefault !important
+.s-bg
+    color cbg !important
+.s-keyword
+    color ckeyword !important
+.s-builtin
+    color cbuiltin !important
+.s-name
+    color cname !important
+.s-param
+    color cparam !important
+.s-constant
+    color cconstant !important
+.s-string
+    color cstring !important
+.s-comment
+    color ccomment !important
+.s-symbol
+    color csymbol !important
+
+
+.title-as-info
+    text-decoration underline wavy
+
+body
+    background-color page_bg
+:root
+    --balloon-color ballon_bg

@@ -1,0 +1,74 @@
+# Site settings
+title: Tumeo Space
+description: >
+  NovastrikeMedia lead programmer;
+  Supporter of free software initiative;
+  I love Python and Godot Engine;
+  Dyslexic but learning English and 日本語;
+  © William Tumeo 2019;
+baseurl: 
+url: "https://tumeo.space"
+# User settings
+username: tumeo
+user_title: William Tumeo - Game Developer
+email: contact@tumeo.space
+twitter_username: tumeo_
+github_username: williamd1k0
+itch_username: tumeo
+mastodon_instance_username: mastodon.social/@tumeo
+misskey_instance_username: misskey.dev/@tumeo
+creary_username: tumeo
+profile_picture: /assets/img/site/profile.png
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+timezone: America/Sao_Paulo
+
+# html minify
+compress_html:
+  clippings: all
+  comments: all
+  endings: []
+  profile: false
+
+# Links to include in menu navigation
+links:
+  - title: home
+    url: /
+  - title: about me
+    url: /about
+  - title: posts
+    url: /posts
+  - title: tags
+    url: /tags
+
+# projects in header index
+projects:
+  - name: Untitled Glue Game
+    url: https://pigdev.itch.io/untitled-glue-game
+  - name: GDScript Playground
+    url: https://gd.tumeo.space/
+  - name: Kagayaki no Neiro
+    url: https://tumeo.itch.io/kagayaki-no-neiro
+  - name: Ren'Py Package for Atom
+    url: https://github.com/renpy/language-renpy
+  - name: Monster Hunter Pocket
+    url: https://tumeo.itch.io/monster-hunter-pocket
+  - name: Burnt
+    url: https://tumeo.itch.io/burnt
+  - name: Godot Sandbox
+    url: https://github.com/williamd1k0/godot-sandbox
+  - name: Plue's Adventures 2
+    url: https://github.com/williamd1k0/plues-adventures-2
+  - name: gdscript-cli
+    url: https://github.com/williamd1k0/gdscript-cli
+  - name: redmask
+    url: https://github.com/williamd1k0/redmask
+  - name: Godot Pong EX
+    url: https://github.com/williamd1k0/godot-pong-ex
+
+# exclude my node related stuff
+exclude: ['package.json', 'src', 'node_modules', 'old', 'repo']

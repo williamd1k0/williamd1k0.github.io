@@ -1,0 +1,36 @@
+<div class="tree-posts" style="overflow-x: hidden;">
+
+    <h3><span class="s-keyword">self<span class="s-symbol">.</span></span><span class="s-param">{{ include.name | replace: " ", "_" }}</span> <span class="s-symbol">= [</span></h3>
+
+    {% for post in site.posts %}
+    {% if post.categories contains include.name %}
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="post-title s-string" itemprop="name">"<span {% include tooltip info=post.categories size="xlarge" pos="right" hilite="no" %}>{{ post.title | replace: ' ','-'}}"</span><span class="s-symbol">,</span></h2>
+            </a>
+        </div>
+    </article>
+
+    {% endif %}
+    {% endfor %}
+
+    {% comment %} Gambiarra {% endcomment %}
+    {% for post in site.arts %}
+        {% unless post.draft %}
+            {% if post.categories contains include.name %}
+            
+    <article role="article" class="post-item" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
+        <div class="content">
+            <a title="Open the post" href="{{ post.url | prepend: site.baseurl }}">
+                <h2 class="post-title s-string" itemprop="name">"{{ post.title | replace: ' ','-'}}"<span class="s-symbol">,</span></h2>
+            </a>
+        </div>
+    </article>
+
+            {% endif %}
+        {% endunless %}
+    {% endfor %}
+    <h3><span class="s-symbol">]</span></h3>
+
+</div>

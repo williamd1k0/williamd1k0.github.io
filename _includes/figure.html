@@ -1,0 +1,8 @@
+<figure class="{{ include.class }}">
+    {% if include.type == null or include.type == 'img' %}
+    <img width="{{ include.width }}" src="{{ include.src }}">
+    {% else if include.type == 'video' %}
+    <video width="{{ include.width }}" autoplay loop muted><source type="video/webm" src="{{ include.src }}"></video>
+    {% endif %}
+    <figcaption>{{ include.title }}</figcaption>
+</figure>

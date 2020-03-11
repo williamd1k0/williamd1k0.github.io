@@ -1,0 +1,27 @@
+
+<script src="{{ "/assets/js/jquery-2.2.4.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/azepto.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/simpleJekyllSearch.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/imageviewer.min.js" | prepend: site.baseurl }}"></script>
+<script>
+	$(document).ready(function () {
+		var v = ImageViewer();
+		$('.post-content p img, .post-content figure img').click(function () {
+			v.show(this.src);
+		});
+
+		$('a[alt-pic]').on('mouseenter', function() {
+			$('#profile-pic')[0].src = $(this).attr('alt-pic');
+		});
+		$('a[alt-pic]').on('mouseleave', function() {
+			$('#profile-pic')[0].src = "/assets/img/site/profile.png";
+		});
+	});
+	window.addEventListener('resize', function() {
+		document.body.style.filter = innerWidth == 666 || innerHeight == 666 ? 'invert(100)' : '';
+	});
+</script>
+{% if page.script %}
+<script src="{{ page.script }}"></script>
+{% endif %}

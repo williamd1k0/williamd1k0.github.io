@@ -1,0 +1,65 @@
+---
+layout: minimal
+title: "About me"
+permalink: /about/
+description: "Some description about William Tumeo..."
+image: assets/img/about/about.png
+---
+
+<img itemprop="image" class="img-rounded about_perfil" src="{{site.profile_picture | prepend: site.baseurl}}" alt="My profile">
+<h1>William Tumeo</h1>
+<p>
+	Hi, I'm <b><i>William Tumeo</i></b>!
+</p>
+<p>
+	I make <span {% include tooltip info="Free/Libre Open-Source Software" %}>FLOSS</span> games and other kinds of tools. <br>
+	I also try to make some art.
+</p>
+<p>
+	<img src="{{"/assets/img/site/blog-image.png" | prepend: site.baseurl}}" alt="">
+</p>
+
+<h2>About me</h2>
+
+<p>I'm a Systems Analyst and Game Developer at <a href="https://twitter.com/NovastrikeMEDIA" target="_blank">@NovastrikeMEDIA</a> and a Supporter of Free-Software Initiative.</p>
+<p>I 💜 Python and <a href="#" target="_blank" {% include tooltip info="An awesome open-source game engine" %}>Godot Engine.</a></p>
+<p>I'm dyslexic but trying to learn English and <span {% include tooltip info="Japanese" size="small" pos="right" %}>日本語</span>.</p>
+
+<h2>My keys</h2>
+
+<p>
+	<span>GPG: <a href="/gpg.txt">/gpg.txt</a></span><br>
+	<span>AGE: <a href="/age.txt">/age.txt</a></span>
+</p>
+
+<h2>Social</h2>
+<p>
+	You can find my games at <a href="https://tumeo.itch.io/" target="_blank">itch.io</a>, a great platform for indie games.
+</p>
+<p>
+	<ul>
+		Other links: <a href="https://twitter.com/tumeo_" target="_blank">Twitter</a> | <a href="https://github.com/williamd1k0" target="_blank">GitHub</a> |  <a href="https://medium.com/@tumeowilliam" target="_blank">Medium</a>
+	</ul>
+	<ul>
+		E-mail: <a href="mailto:contact@tumeo.space">contact@tumeo.space</a>
+	</ul>
+</p>
+
+
+<h2>Some projects</h2>
+<div class="aboutme">
+	<ul class="recent">
+		{% for project in site.projects %}
+	    	<li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
+	    {% endfor %}
+	</ul>
+</div>
+
+<hr>
+<p>My games and tools are free but if you like them consider donating, every penny counts ;)</p>
+<p style="text-align:center">
+	BTC: <code style="font-size: 16px;">14RJGXC6uCaFhUHb8qVjQvDvUZwygSupYk</code>
+</p>
+<p style="text-align:center">
+	<img src="/assets/img/site/14RJGXC6uCaFhUHb8qVjQvDvUZwygSupYk.png" alt="BTC Donation" title="BTC Donation">
+</p>

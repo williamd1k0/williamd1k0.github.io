@@ -1,0 +1,1 @@
+{% if include.hilite == null or include.hilite == "yes" %}class="title-as-info" {% endif %}aria-label="{{ include.info }}" data-balloon-pos="{% if include.pos == null %}up{% else %}{{include.pos}}{% endif %}" data-balloon-blunt data-balloon-length="{% if include.size == null %}small{% else %}{{include.size}}{% endif %}"
