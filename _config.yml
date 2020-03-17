@@ -46,6 +46,8 @@ links:
     url: /posts
   - title: tags
     url: /tags
+  - title: donations
+    url: /donations
 
 # projects in header index
 projects:

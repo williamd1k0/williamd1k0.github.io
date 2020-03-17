@@ -3,7 +3,6 @@ layout: minimal
 title: "About me"
 permalink: /about/
 description: "Some description about William Tumeo..."
-image: assets/img/about/about.png
 ---
 
 <img itemprop="image" class="img-rounded about_perfil" src="{{site.profile_picture | prepend: site.baseurl}}" alt="My profile">
@@ -76,29 +75,6 @@ image: assets/img/about/about.png
 	</ul>
 </div>
 
-<hr>
-<p>My games and tools are free but if you like them consider donating, every penny counts ;)</p>
+<h2>Donations</h2>
 
-<center style="margin-bottom: -29px;">
-	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-		<input type="hidden" name="cmd" value="_s-xclick" />
-		<input type="hidden" name="hosted_button_id" value="K3AKB34MTMA9A" />
-		<input type="image" src="/assets/img/misc/paypal-donate-button.png" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-		<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-	</form>
-</center>
-
-<p style="text-align:center; margin-bottom: -25px;">
-	<a href="https://liberapay.com/tumeo/donate"><img class="no-zoom" src="/assets/img/misc/liberapay-donate-button.png" alt="LiberaPay"></a>
-</p>
-
-<p style="text-align:center; margin-bottom: -25px;">
-	<a href="https://app.picpay.com/user/tumeo"><img class="no-zoom" src="/assets/img/misc/picpay-donate-button.png" alt="PicPay"></a>
-</p>
-
-<p style="text-align:center">
-	BTC: <code style="font-size: 16px;">14RJGXC6uCaFhUHb8qVjQvDvUZwygSupYk</code>
-</p>
-<p style="text-align:center">
-	<img src="/assets/img/site/14RJGXC6uCaFhUHb8qVjQvDvUZwygSupYk.png" alt="BTC Donation" title="BTC Donation">
-</p>
+{% include donations.html %}
