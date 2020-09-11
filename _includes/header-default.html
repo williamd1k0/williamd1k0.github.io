@@ -2,10 +2,12 @@
 	<div class="content">
 
 		<div class="person">
-			<div {% include tooltip info="Ciao!" pos="left" hilite="no" %} data-balloon-visible style="width:130px; height:130px; position:absolute; display:inline"></div>
-			<img id="profile-pic" alt="My profile pic" src="{{ site.profile_picture | prepend: site.baseurl }}">
+			<a href="{{ "about" | prepend: site.baseurl }}">
+				<div {% include tooltip info="Ciao!" pos="left" hilite="no" %} data-balloon-visible style="width:130px; height:130px; position:absolute; display:inline"></div>
+				<img id="profile-pic" alt="My profile pic" src="{{ site.profile_picture | prepend: site.baseurl }}">
+			</a>
 		</div>
-
+		
 		<h1>
 			<span class="site-title">
 				<a {% include tooltip info="ABOUT ME" pos="down" hilite="no" %} href="{{ "about" | prepend: site.baseurl }}">/{{ site.username | upcase }}/</a>
@@ -26,7 +28,7 @@
 				}
 			</style>
 
-			<a {% include tooltip info="Follow me!" pos="up-right" hilite="no" %} alt-pic="https://pbs.twimg.com/profile_images/1232187620752535552/XjnzT_zO_400x400.jpg" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
+			<a {% include tooltip info="Follow me!" pos="up-right" hilite="no" %} alt-pic="{{ 'assets/img/site/profile-tt.jpg' | prepend: site.baseurl }}" target="_blank" href="https://twitter.com/{{ site.twitter_username }}">
 				<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
 			</a>
 
