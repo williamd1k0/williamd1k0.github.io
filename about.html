@@ -53,7 +53,9 @@ description: "Some description about William Tumeo..."
 	<br />
 	Matrix: <a href="https://matrix.to/#/{{ site.matrix_username }}">{{ site.matrix_username }}</a>
 	<br />
-	SNS: <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a> | <a href="https://{{ site.mastodon_instance_username }}" target="_blank">Mastodon</a> | <a href="https://bittube.video/accounts/tumeo/" target="_blank">PeerTube</a> | <a href="https://creary.net/@{{ site.creary_username }}" target="_blank">Creary</a> | <a href="https://medium.com/@tumeowilliam" target="_blank">Medium</a>
+	Session: <code style="word-wrap: break-word">{{ site.sessionapp_id }}</code>
+	<br />
+	SNS: <a href="https://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a> | <a href="https://{{ site.mastodon_instance_username }}" target="_blank">Mastodon</a> | <a href="https://odysee.com/@{{ site.odysee_username }}" target="_blank">Odysee</a> | <a href="https://creary.net/@{{ site.creary_username }}" target="_blank">Creary</a>
 
 </p>
 
@@ -70,8 +72,8 @@ description: "Some description about William Tumeo..."
 <div class="aboutme">
 	<ul class="recent">
 		{% for project in site.projects %}
-	    	<li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
-	    {% endfor %}
+			<li><a href="{{ project.url}}"><h3 class="project-name" itemprop="name">{{ project.name }}</h3></a></li>
+		{% endfor %}
 	</ul>
 </div>
 

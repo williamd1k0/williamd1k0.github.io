@@ -20,6 +20,8 @@ mastodon_instance_username: mastodon.social/@tumeo
 misskey_instance_username: misskey.dev/@tumeo
 creary_username: tumeo
 matrix_username: "@tumeo:matrix.org"
+odysee_username: "tumeo:c"
+sessionapp_id: "05c8728266e1ce5a789e888ca391e75b43fa1802553ec63c1b89eebc41b6a7b922"
 profile_picture: /assets/img/site/profile.png
 
 # Build settings
