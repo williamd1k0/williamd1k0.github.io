@@ -11,7 +11,7 @@ color: '#f38f54'
 script: /assets/posts/melhor-antivirus/script.js
 ---
 
-><span {% include tooltip info="Pular pro resuminho" pos="right" hilite="no" %}>[*TL;DR*](#tldr)</span>
+><span {% include tooltip info="Pular para o resumo" pos="right" hilite="no" %}>[*TL;DR*](#tldr)</span>
 
 ***
 
@@ -36,11 +36,11 @@ A maioria dos malwares pode ser encontrada em programas piratas, e adwares são 
 
 ### Bundlewares
 
-Bundlewares são programas que instalam outros programas que você não solicitou. Por exemplo, se você tentar instalar o **Adobe Flash Player**, ele vai tentar te empurrar algumas ferramentas do **McAfee** (que ironicamente deveria ser um antivírus).
+Bundlewares são programas que instalam outros programas que você não solicitou. Por exemplo, se você tentar instalar o **Adobe Flash Player**, ele vai tentar te empurrar algumas ferramentas do <span {% include tooltip info="John McAfee didn't kill himself" pos="up" hilite="no" %}>**McAfee**</span> (que ironicamente deveria ser um antivírus).
 
 ![Flash Player](/assets/posts/melhor-antivirus/flash-player-eww.png)
 
-Neste caso, o bundleware explícito pois é simples recusar os programas indesejados, basta ler com atenção. Entretanto, a maioria dos bundlewares baixa outros programas direto no instalador, e as vezes você não percebe que tem uma opção para recusar os outros programas.
+Neste caso, o bundleware é explícito pois é simples recusar os programas indesejados, basta ler com atenção. Entretanto, a maioria dos bundlewares baixa outros programas direto no instalador, e as vezes você não percebe que tem uma opção para recusar os outros programas.
 
 ![DAEMON Tools - Installer](/assets/posts/melhor-antivirus/daemon-installer.png)
 
@@ -62,7 +62,7 @@ Nunca é bom arriscar, então você precisa evitar este tipo de programa. E mesm
 
 A melhor forma de resolver isso é procurando por programas alternativos que sejam mais seguros e, principalmente, priorizando programas que sejam **livres** ou pelo menos de código-aberto (**open-source** no inglês).
 
-Um programa ser livre ou open-source não significa que ele será bom, mas sim que ele pelo menos será seguro, isso porque boa parte das pessoas que utilizam este programa garantem que ele seja seguro através de contribuições no código-fonte.
+Um programa ser livre ou open-source não significa que ele será bom, mas sim que ele pelo menos será mais seguro, isso porque boa parte das pessoas que utilizam este programa garantem que ele seja seguro através de auditorias e contribuições no código-fonte.
 
 ## AlternativeTo
 
@@ -98,12 +98,12 @@ Por fim, clicando nesse programa você vai ter acesso a outras alternativas, mas
 Na maioria dos casos você não precisa.
 Mas mesmo assim, se você quiser instalar algum programa suspeito ou pirata porque você acha que precisa (por exemplo, quando algum curso ou trabalho te obriga a usar um programa específico), você pode tentar fazer isso de algumas formas mais seguras.
 
-Se você precisa instalar algum programa que é considerado bundleware, você pode tentar usar uma sandbox, que é um tipo de programa que isola uma parte do seu sistema para quando você executar algo dentro dele, esse programa não se misture com o seu sistema real.
+Se você precisa instalar algum programa que é considerado bundleware, você pode tentar usar uma sandbox, que é um tipo de programa que isola uma parte do seu sistema, para quando você executar algo dentro dele, esse programa não se misture com o seu sistema real.
 
 Caso você queira instalar um programa pirata, primeiro é preciso saber se o que você baixou é mesmo o programa que você queria.
 Então você pode tentar também usar uma sandbox.
 
-Em alguns casos a sandbox não vai conseguir rodar o seu programa, então uma alternativa a isso seria utilizar máquinas virtuais. Este processo todo pode ser complicado, mas é importante não arriscar nesses casos específicos.
+Em alguns casos a sandbox não vai conseguir rodar o seu programa por problemas de compatibilidade, então uma alternativa a isso seria utilizar máquinas virtuais. Este processo todo pode ser complicado, mas é importante não arriscar nesses casos específicos.
 
 ### Torrent Nunca Mais?
 
