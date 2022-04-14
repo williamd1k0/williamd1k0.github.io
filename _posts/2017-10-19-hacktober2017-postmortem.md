@@ -38,7 +38,7 @@ Regarding the projects, I will highlight here the ones I liked the most:
 
 - **Drawable Canvas** — This project was very simple but I liked doing it because it gave me some ideas for other projects, for example, one of the games I’m working on right now.*
 
-{% include figure.html type='video' src='/assets/img/hacktober2017/painters.webm' title='The game I\'m creating right now because of the “Drawable Canvas” project.' %}
+{% include figure.html type='video' src='/assets/img/hacktober2017/painters.webm' title="The game I'm creating right now because of the `Drawable Canvas` project." %}
 
 - **UDP Connections** — This project was one of the most important because I dealt with something I had never tried before: connections for online games. The result was a success, especially considering it was an initial study.
 
