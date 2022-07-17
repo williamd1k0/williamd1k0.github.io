@@ -53,6 +53,10 @@ links:
 
 # projects in header index
 projects:
+  - name: MANGA Plus Top 40
+    url: https://tumeo.space/manga-plus-top40
+  - name: PixelStyle
+    url: https://github.com/williamd1k0/PixelStyle
   - name: Untitled Glue Game
     url: https://pigdev.itch.io/untitled-glue-game
   - name: GDScript Playground
