@@ -81,4 +81,4 @@ projects:
     url: https://github.com/williamd1k0/godot-pong-ex
 
 # exclude my node related stuff
-exclude: ['package.json', 'src', 'node_modules', 'old', 'repo']
+exclude: ['package.json', 'gulpfile.js', 'src', 'node_modules', 'Makefile', 'README.md']
