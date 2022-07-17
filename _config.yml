@@ -1,11 +1,11 @@
 # Site settings
 title: Tumeo Space
 description: >
-  NovastrikeMedia lead programmer;
-  Supporter of free software initiative;
-  I love Python and Godot Engine;
-  Dyslexic but learning English and 日本語;
-  © William Tumeo 2019;
+  Systems Analyst and Game Developer at Novastrike;␊
+  Supporter of free software initiative;␊
+  FLOSS, Python, Ren'Py and Godot Engine;␊
+  Dyslexic but learning English and 日本語;␊
+
 baseurl: 
 url: "https://tumeo.space"
 # User settings
