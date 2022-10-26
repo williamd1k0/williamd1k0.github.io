@@ -1,35 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    {% include head.html %}
-    <body>
-        {% include svg-icons.html %}
-        {% include header-post.html %}
-        {% include tree-posts.html %}
-        {% for cat in page.categories %}
-            {% include tree-categories.html name=cat %}
-        {% endfor %}
-        <section class="post" itemscope itemtype="http://schema.org/BlogPosting">
-            <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
-            {% if page.date %}
-            <div class="time">
-                <time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-            </div>
-            {% endif %}
-            <article role="article" id="scroll" class="post-content" itemprop="articleBody">
-                {% if page.color %}
-                <div class="post-image" style="background-color: {{page.color}}">
-                {% else %}
-                <div class="post-image">
-                {% endif %}
-                    <img src="{{page.image | prepend: site.baseurl}}" alt="">
-                </div>
-                {{ content }}
-            </article>
+	{% include head.html %}
+	<body>
+		{% include svg-icons.html %}
+		{% include header-post.html %}
+		{% include tree-posts.html %}
+		{% for cat in page.categories %}
+			{% include tree-categories.html name=cat %}
+		{% endfor %}
+		<section class="post" itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="post-title" itemprop="name">{{ page.title }}</h1>
+			{% if page.date %}
+			<div class="time">
+				<time itemprop="datePublished" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+			</div>
+			{% endif %}
+			<article role="article" id="scroll" class="post-content" itemprop="articleBody">
+				{% if page.color %}
+				<div class="post-image" style="background-color: {{page.color}}">
+				{% else %}
+				<div class="post-image">
+				{% endif %}
+					<img src="{{page.image | prepend: site.baseurl}}" alt="">
+				</div>
+				{{ content }}
+			</article>
 
-            {% include share.html %}
-            {% include comments.html %}
-            {% include footer.html %}
-            {% include scripts.html %}
-        </section>
-    </body>
+			<p>
+				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9962263199785319"
+				crossorigin="anonymous"></script>
+				<ins class="adsbygoogle"
+					style="display:block"
+					data-ad-format="fluid"
+					data-ad-layout-key="-fb+5w+4e-db+86"
+					data-ad-client="ca-pub-9962263199785319"
+					data-ad-slot="8128550341"></ins>
+				<script>
+					 (adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</p>
+
+			{% include share.html %}
+			{% include comments.html %}
+			{% include footer.html %}
+			{% include scripts.html %}
+		</section>
+	</body>
 </html>
