@@ -29,6 +29,9 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 
+comments_enabled: true
+ads_enabled: true
+
 timezone: America/Sao_Paulo
 
 # html minify
