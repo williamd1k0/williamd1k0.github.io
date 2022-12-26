@@ -83,5 +83,13 @@ projects:
   - name: Godot Pong EX
     url: https://github.com/williamd1k0/godot-pong-ex
 
+include:
+  - .well-known
 # exclude my node related stuff
-exclude: ['package.json', 'gulpfile.js', 'src', 'node_modules', 'Makefile', 'README.md']
+exclude:
+  - package.json
+  - gulpfile.js
+  - src
+  - node_modules
+  - Makefile
+  - README.md
