@@ -10,6 +10,8 @@ description: "So, I’m writing this because Godot Engine has some tricks (not h
 color: '#99e9fe'
 ---
 
+>This article covers only the Godot Engine 2.
+
 ## Once Upon a Time
 
 First of all, if you fell here and don’t know the Godot Engine, it’s an awesome game engine (and it is free and open-source). You can see more on the [official website](https://godotengine.org/){:target="_blank"}.
@@ -77,7 +79,3 @@ That’s all. This is what you need to know to start using Godot Engine for pixe
 ***
 
 ![Make engines great again](/assets/img/misc/tromp.png)
-
->This article covers only the Godot Engine 2.
-
->This publication is also available on [Medium](https://medium.com/@tumeowilliam/godot-engine-and-pixel-art-a-better-love-story-than-twilight-4c8155ba71cd).
