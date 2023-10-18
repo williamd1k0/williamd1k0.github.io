@@ -6,7 +6,7 @@ share_text: State Management in Godot with a Vue.js Twist
 date: 2023-10-18
 categories: gamedev
 tags: [godotengine, gamedev, data, reactivity, vuejs, tutorial]
-image: /assets/posts/godot-states/header.png
+image: /assets/posts/godot-states/header.jpg
 card: summary_large_image
 ---
 
@@ -15,7 +15,7 @@ So I decided to write this text to demonstrate the concept.
 
 ### Once again, this is not about ECS™
 
-{% include figure.html src='/assets/posts/godot-states/ecs.png' title='' class='right' %}
+{% include figure.html src='/assets/posts/godot-states/ecs.jpg' title='' class='right' %}
 
 First of all, this text is not strictly about design patterns or system architectures.
 I'm a systems analyst and I know that design patterns and system architectures are important, but I don't like to talk about them in an idealistic way, especially in game development.
@@ -38,7 +38,7 @@ The more you modularise your game, the more you need to propagate signals (event
 
 So this is basically how I used to make my games:
 
-![](/assets/posts/godot-states/flowchart-before.png)
+![](/assets/posts/godot-states/flowchart-before.jpg)
 
 As I said before, games are mostly designed and built by prototyping, so eventually you will find that your game gets bigger and bigger and simply propagating the signals through the scene tree becomes more and more difficult as many elements end up depending on more data from multiple sources.
 
@@ -110,7 +110,7 @@ Because Godot resources are unique at runtime, no matter how you load a resource
 
 So what I did was implement the "stores" concept using custom resources:
 
-![](/assets/posts/godot-states/flowchart-after.png)
+![](/assets/posts/godot-states/flowchart-after.jpg)
 
 Since this example only has a single state, it's not so clear how it's different or more modular than a singleton, so I've also made a simple project to demonstrate the concept.
 
@@ -136,7 +136,7 @@ When it comes to its advantages over singletons:
  - Plus: you can edit states at runtime for testing purposes (using `@export` and `setget` on state variables).
  - Plus²: you can reuse the same state resource class (similar to the [`ButtonGroup`](https://docs.godotengine.org/en/stable/classes/class_buttongroup.html) resource).
 
-![](/assets/posts/godot-states/functions.png)
+![](/assets/posts/godot-states/functions.jpg)
 
 ## That's all
 
