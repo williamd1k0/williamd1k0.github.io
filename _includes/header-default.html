@@ -7,7 +7,7 @@
 				<img id="profile-pic" alt="My profile pic" src="{{ site.profile_picture | prepend: site.baseurl }}">
 			</a>
 		</div>
-		
+
 		<h1>
 			<span class="site-title">
 				<a {% include tooltip info="ABOUT ME" pos="down" hilite="no" %} href="{{ "about" | prepend: site.baseurl }}">/{{ site.username | upcase }}/</a>
@@ -32,19 +32,19 @@
 				<svg class="icon icon-twitter"><use xlink:href="#icon-twitter"></use></svg>
 			</a>
 
-			<a style="display:none" rel="me" href="https://{{ site.mastodon_instance_username }}">Mastodon</a>
+			<!-- <a style="display:none" rel="me" href="https://{{ site.mastodon_instance_username }}">Mastodon</a>
 			<a {% include tooltip info="Follow me!" pos="down" hilite="no" %} alt-pic="https://files.mastodon.social/accounts/avatars/000/333/352/original/543a1f6fc21227ff.png" rel="me" target="_blank" href="https://{{ site.mastodon_instance_username }}">
 				<svg class="icon icon-mastodon"><use xlink:href="#icon-mastodon"></use></svg>
-			</a>
+			</a> -->
 
 			<!-- <a style="display:none" rel="me" href="href="https://{{ site.misskey_instance_username }}">Misskey</a>
 			<a {% include tooltip info="Follow me!" pos="down" hilite="no" %} alt-pic="/assets/img/site/profile-cat.png" rel="me" target="_blank" href="https://{{ site.misskey_instance_username }}">
 				<svg class="icon icon-misskey"><use xlink:href="#icon-misskey"></use></svg>
 			</a> -->
 
-			<a {% include tooltip info="My arts!" pos="down" hilite="no" %} alt-pic="https://ipfs.creary.net/ipfs/QmNiYmGhXb7VgQ2H2yVbeyJL9qr3pvKhvSsfejYbgSEMHE" target="_blank" href="https://creary.net/@{{ site.creary_username }}">
+			<!-- <a {% include tooltip info="My arts!" pos="down" hilite="no" %} alt-pic="https://ipfs.creary.net/ipfs/QmNiYmGhXb7VgQ2H2yVbeyJL9qr3pvKhvSsfejYbgSEMHE" target="_blank" href="https://creary.net/@{{ site.creary_username }}">
 				<svg class="icon icon-creary"><use xlink:href="#icon-creary"></use></svg>
-			</a>
+			</a> -->
 
 			<a {% include tooltip info="My repos!" pos="down" hilite="no" %} alt-pic="https://avatars0.githubusercontent.com/u/10428035?s=460&v=4" target="_blank" href="https://github.com/{{ site.github_username }}">
 				<svg class="icon icon-github-alt"><use xlink:href="#icon-github-alt"></use></svg>
