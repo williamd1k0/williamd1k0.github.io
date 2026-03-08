@@ -114,7 +114,7 @@ So what I did was implement the "stores" concept using custom resources:
 
 Since this example only has a single state, it's not so clear how it's different or more modular than a singleton, so I've also made a simple project to demonstrate the concept.
 
-{% include figure.html type='video' src='/assets/posts/godot-states/video.webm' title='A clicker game is a really good example, because it\'s basically state management on steroids.' %}
+{% include figure.html type='iframe' src='/assets/game/state-clicker/StateClicker.html' title='A clicker game is a really good example, because it\'s basically state management on steroids.' %}
 
 In this demonstration, I have created 4 state resources:
 - **Click State**: Emits and counts clicks

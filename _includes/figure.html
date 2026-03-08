@@ -1,8 +1,18 @@
 <figure class="{{ include.class }}">
     {% if include.type == null or include.type == 'img' %}
-    <img width="{{ include.width }}" src="{{ include.src }}">
+    <img width="{{ include.width }}" src="{{ include.src }}" />
+    {% else if include.type == 'iframe' %}
+    <iframe
+        width="{{ include.width }}"
+        height="315"
+        src="{{ include.src }}"
+        title="{{ include.title }}"
+        frameborder="0"
+    ></iframe>
     {% else if include.type == 'video' %}
-    <video width="{{ include.width }}" autoplay loop muted><source type="video/webm" src="{{ include.src }}"></video>
+    <video width="{{ include.width }}" autoplay loop muted>
+        <source type="video/webm" src="{{ include.src }}" />
+    </video>
     {% endif %}
     <figcaption>{{ include.title }}</figcaption>
 </figure>
