@@ -24,18 +24,20 @@
 					<img src="{{page.image | prepend: site.baseurl}}" alt="">
 				</div>
 				{{ content }}
-				
-				{% if site.ads_enabled %}
-					<p>
-						{% include ads.html %}
-					</p>
-				{% endif %}
+
 			</article>
-			
+
 			{% include share.html %}
 			{% if site.comments_enabled %}
 				{% include comments.html %}
 			{% endif %}
+
+			{% if site.ads_enabled %}
+				<p>
+					{% include ads.html %}
+				</p>
+			{% endif %}
+
 			{% include footer.html %}
 			{% include scripts.html %}
 		</section>
