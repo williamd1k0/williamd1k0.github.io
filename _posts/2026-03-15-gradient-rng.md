@@ -81,7 +81,7 @@ This way, you can easily design the weighted random distribution by simply adjus
 You can see this in action in this simple demo I made.
 In the top left corner, you can see the gradient that represents the distribution; in the top right corner, you can click the "Spawn" button to spawn a different object that wil be randomly selected based on the distribution.
 
-{% include figure.html type='iframe' src='/assets/game/gradient-weighted-sampler/GradientWeightedSampler.html' title='' width='576' height='324' %}
+{% include figure.html type='iframe' src='/assets/game/gradient-weighted-sampler/GradientWeightedSampler.html' title='' width='460' height='320' %}
 
 ## Pros & Cons
 
