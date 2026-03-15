@@ -6,7 +6,7 @@ share_text: Weighted Random Distribution using Gradients
 date: 2026-03-15
 categories: gamedev
 tags: [godotengine, gamedev, tutorial, rng, random, gradient, weighted]
-image: /assets/posts/gradient-rng/header.png
+image: /assets/posts/gradient-rng/header.jpg
 card: summary_large_image
 ---
 
