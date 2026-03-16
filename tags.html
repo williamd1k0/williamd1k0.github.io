@@ -13,18 +13,18 @@ description: "Take a look at my beautiful tags."
         <a data-scroll href="#{{ tag | slugify }}">{{ tag }}</a>
     {% endfor %}
   {% else %}
-    {% for tag in tags_list %}
+    {% for tag in tags_list reversed %}
         <a data-scroll href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
     {% endfor %}
   {% endif %}
 {% assign tags_list = nil %}
 </div>
 
-{% for tag in site.tags  %}
+{% for tag in site.tags reversed %}
     <span class="tag-title" id="{{ tag[0] | slugify }}">{{ tag[0] }}</span>
     <ul class="post-list">
         {% assign pages_list = tag[1] %}
-        {% for post in pages_list reversed %}
+        {% for post in pages_list %}
             {% if post.title != null %}
             {% if group == null or group == post.group %}
             <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
